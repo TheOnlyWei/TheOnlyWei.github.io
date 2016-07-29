@@ -61,11 +61,12 @@ a:active, a:focus {
 */
 .nav {
 	background-color: #84A4B3;
-
+	padding-bottom: 1px;
 }
 .nav-tabs {
 	text-align: center;
   border-bottom: 0px;
+
 }
 
 .nav-tabs > li {
@@ -79,6 +80,7 @@ a:active, a:focus {
 	padding: 10px 30px 10px 30px;
 	color: white;
 	font-size: 21px;
+	border: 0px;
 }
 
 .nav-tabs > #art-tab.active > a,
@@ -89,9 +91,9 @@ a:active, a:focus {
   border-bottom-color: transparent;
   cursor: default;
  	border: 0px;
-	
 
 }
+
 .nav-tabs > #resume-tab.active > a,
 .nav-tabs > #resume-tab.active > a:hover,
 .nav-tabs > #resume-tab.active > a:focus {
@@ -124,9 +126,6 @@ a:active, a:focus {
 
 }
 
-.jumbotron .container p {
-	
-}
 
 .jumbotron h1 {
   color: #fff;
@@ -267,8 +266,8 @@ td.left-col {
 }
 
 .main-body {
-  background-color: #F0EDE9;
- 	outline: none;
+	background-color: #F0EDE9;
+	outline: none;
 }
 
 .main-body p {
