@@ -11,15 +11,20 @@
 		
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		-->
-		<link rel="stylesheet" href="w3.css">
-		<link rel="stylesheet" href="bootswatch/darkly.css">
-    <link rel="stylesheet" href="main.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="style/w3.css">
+		<link rel="stylesheet" href="style/darkly.css">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/socialbuttons.css">
   </head>
 
   <body>
+<!--
     <div class="nav-bar">
 	  	<div class="container" >
 				<div class="left-nav">
@@ -36,19 +41,26 @@
 
 			</div>
     </div>
-
+-->
     <div class="jumbotron" class="header">
 
       <div class="container">
 
 		    <div class="row">
-
 			  	<div class="col-md-12">
 				    <div class="thumbnail">
 							<img class="img-circle" src="images/photos/portraitme.jpg">
 						</div>
 				  </div>
+				</div>
 
+				<div class="row">
+					<div id="social">
+						<a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/profile.php?id=100012851389365" target="_blank"></a>
+						<a class="twitterBtn smGlobalBtn" href="https://twitter.com/TheOnlyWei123" target="_blank"></a>
+						<a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/weishi123" target="_blank"></a>
+						<a class="githubBtn smGlobalBtn" href="https://github.com/TheOnlyWei" target="_blank"></a>
+					</div>
 				</div>
 
 		    <div class="row">
@@ -65,20 +77,21 @@
 
 						 	<div class="blog">
 								<h1>Blog</h1>
-								<div>
-									<p class="blog-entry">
-										I bought a Kindle Paperwhite with ads for $20 off. The ads never bothered me, so it is worth it. There is a built-in dictionary. Reading has become so much easier.  
+
+								<div class="blog-entry">
+									<h3>Bought a Kindle</h3>
+									<p>I bought a Kindle Paperwhite that came with ads for $20 off. The ads never bothered me, so it was worth it. There is a built-in dictionary, making reading so much easier.  
 										<p class="blog-entry-date">9:13PM 7/21/2016</p>
 									</p>
 								</div>
 
-								<div>
-									<p class="blog-entry">
-										The most difficult aspect of Android programming is the massive library and API. Multi-threaded programs are also required for responsiveness. The Android OS is also constantly changing, making the learning process more difficult.
+
+								<div class="blog-entry">
+									<h3>Android Dev.</h3>
+									<p>The most difficult aspect of Android programming is the massive library and API. Multi-threaded programs are also required for application responsiveness. The Android OS is also constantly changing, making the learning process more difficult.
 										<p class="blog-entry-date">10:11PM 7/21/2016</p>
 									</p>
 								</div>
-
 
 							</div> <!-- closes blog -->
 
@@ -96,197 +109,193 @@
 
 			</div> <!-- closes container -->
 
-    </div> <!-- closes jumnotron -->
+    </div> <!-- closes jumbotron -->
 
-		<div class="main-body">
 
-			<div class="texts"> <!-- space denotes two classes -->
-					
-				<div class="container">
+		<ul class="nav nav-tabs">
+		  <li id="resume-tab" class="active"><a data-toggle="tab" href="#Resume">Resume</a></li>
+		  <li id="art-tab"><a data-toggle="tab" href="#Art">Art</a></li>
+		</ul>
 
-    			<a name="Education"></a>
-					<div class="collapser">
-						<button type="button" id="education" class="btn btn-default btn-lg btn-block">Education</button>
-					</div>
+		<div class="tab-content main-body">
 
-					<div id="collapsable1">
-
+			<div id="Resume" class="tab-pane fade in active">
+				<div class="texts container"> <!-- space denotes two classes -->
+  			<a name="Education"></a>
+				<div class="collapser">
+					<button type="button" id="education" class="btn btn-default btn-lg btn-block">Education</button>
+				</div>
+				<div id="collapsable1">
+					<div class="description">
 						<h4 class="subject">Computer Science Major with Physics Minor at CUNY Hunter college</h4>
-						<div class="experience">
-							<table>	
-								<tr>
-									<td class="left-col">Degree:</td>		
-									<td>Bachelors in Computer Science with minor in Physics</td>
-								</tr>
+						<table>	
+							<tr>
+								<td class="left-col">Degree:</td>		
+								<td>Bachelors in Computer Science with minor in Physics</td>
+							</tr>
 
-								<tr>
-									<td class="left-col">Major GPA:</td>
-									<td>4.0</td>
-								</tr>
+							<tr>
+								<td class="left-col">Major GPA:</td>
+								<td>4.0</td>
+							</tr>
 
-								<tr>
-									<td class="left-col">Overall GPA:</td>
-									<td>3.84</td>								
-								</tr>
-								<tr>
-									<td class="left-col">Graduation:</td>
-									<td>Spring 2017</td>								
-								</tr>
+							<tr>
+								<td class="left-col">Overall GPA:</td>
+								<td>3.84</td>								
+							</tr>
+							<tr>
+								<td class="left-col">Graduation:</td>
+								<td>Spring 2017</td>								
+							</tr>
 
-							</table>
-						</div>
-
-
+						</table>
 					</div>
 
-        	<a name="programming"></a>
-					<div class="collapser">
-						<button type="button" id="programming" class="btn btn-default btn-lg btn-block">Programming</button>
+				</div>
+
+      	<a name="programming"></a>
+				<div class="collapser">
+					<button type="button" id="programming" class="btn btn-default btn-lg btn-block">Programming</button>
+				</div>
+				<div id="collapsable2">
+
+					<div class="description">
+						<h4 class="subject">C++ (main language)</h4>
+						<p>Familiar Knowledge of data structures and algorithms in the standard C++ library. Largest project was a terminal-based simulation of a basic operating system using round-robin CPU scheduling, CLOOK disk scheduling, and segmented memory.</p>
 					</div>
 
-					<div id="collapsable2">
 
-						<h4 class="subject">C++ (2-3years)</h4>
-						<div class="experience">
-							<p>Familiar Knowledge of data structures and algorithms in the standard C++ library. Largest project was a terminal-based simulation of a basic operating system using round-robin CPU scheduling, CLOOK disk scheduling, and segmented memory.</p>
-						</div>
+					<div class="description">
+						<h4 class="subject">Java</h4>
+						<p>Knowledge of data structures and algorithms carried over from C++. Building a chemistry calculator with SQLite for Periodic table in Android. See Android SDK section.</p>
+					</div>
 
-						<h4 class="subject">Java (4 months)</h4>
-						<div class="experience">
-							<p>Knowledge of data structures and algorithms carried over from C++.</p>
-						</div>
 
-						<h4 class="subject">Android (4 months)</h4>
-						<div class="experience">
+					<div class="description">
+						<h4 class="subject">Android SDK</h4>
+						<p>Made several Android mini-apps such as a compass and a GPS locators. Largest project was a chemistry calculator, using XML, Java. I parsed a periodic table from a website using C++ into XML format, then I parsed the XML into Android local storage using SQLite.</p>
+					</div>
 
-							<p>Made several Android mini-apps such as a compass and a GPS locators. Largest project was a chemistry calculator, using XML, Java. I parsed a periodic table from a website using C++ into XML format, then I parsed the XML into Android local storage using SQLite.</p>
-						</div>
+					<div class="description">
+						<h4 class="subject">Javascript</h4>
+						<p>Knowledge of basic Javascript syntax. Data structures and algorithms carried over from C++. Used for scripting this web-page's functionalities</p>
+					</div>
 
-						<h4 class="subject">Javascript (3 months)</h4>
-						<div class="experience">
-							<p>Knowledge of basic Javascript syntax. Data structures and algorithms carried over from C++.</p>
-						</div>
 
+					<div class="description">
 						<h4 class="subject">HTML & CSS with Bootstrap (2 months)</h4>
-						<div class="experience">
-							<p>Knowledge of basic tags and and elements.</p>
-						</div>
-
-
+						<p>Knowledge of basic tags and and elements, used in designing this website.</p>
 					</div>
+				</div>
 
-		      <a name="other-skills"></a>
-					<div class="collapser">
-						<button type="button" id="other" class="btn btn-default btn-lg btn-block">Other Skills</button></div>
-					<div id="collapsable3">
-
+		    <a name="other-skills"></a>
+				<div class="collapser">
+					<button type="button" id="other" class="btn btn-default btn-lg btn-block">Other Skills</button></div>
+				<div id="collapsable3">
+					<div class="description">
 						<h4 class="subject">College Math Tutor at CUNY Hunter College (02/08/2012 to 05/15/2016)</h4>
-						<div class="experience">
-							<ul> 
-								<li>Tutored second semester calculus and below math courses </li>
-								<li>Managed the needs of multiple students from all over CUNY campuses </li>
-								<li>Worked with other tutors solving difficult problems </li>
-								<li>Managed a strict schedule as a full time student with a part time job </li>
-								<li>Adapted to the curriculum as the college changed textbooks </li>
-								<li>Communicated to diverse a student body professionally </li>
-							</ul>
-						</div>				
+						<ul> 
+							<li>Tutored second semester calculus and below math courses </li>
+							<li>Managed the needs of multiple students from all over CUNY campuses </li>
+							<li>Worked with other tutors solving difficult problems </li>
+							<li>Managed a strict schedule as a full time student with a part time job </li>
+							<li>Adapted to the curriculum as the college changed textbooks </li>
+							<li>Communicated to diverse a student body professionally </li>
+						</ul>
+					</div>				
+
+					<div class="description">
 
 						<h4 class="subject">Languages</h4>
-						<div class="experience">
-							<ul> 
-								<li>English: Native </li>
-								<li>Mandarin: fluent</li>
-							</ul>				
-						</div>	
-
-					</div>
-      	</div>
-			</div> <!-- closes container texts -->
+						<ul> 
+							<li>English: Native </li>
+							<li>Mandarin: fluent</li>
+						</ul>				
+					</div>	
+				</div> <!--close collapsable3-->
+				</div> <!--close container-->
+    	</div><!--close Resume-->
 
 
-			<div class="images">
-
-	      <div class="container" >
-
-      		<a name="photography"></a>
-
+			<div id="Art" class="tab-pane fade images">
+				<div class="container">
+		  		<a name="photography"></a>
 					<div class="collapser">
 						<button type="button" id="photography" class="btn btn-default btn-lg btn-block">Photography</button>
 					</div>
 
 					<div id="collapsable4">
-	      		<div class="row" >
-	          
-	              <div class="col-md-3">
-	                  <div class="thumbnail">
+			  		<div class="row" >
+			      
+			          <div class="col-md-3">
+			              <div class="thumbnail">
 												<!-- try img-responsive -->
-	                      <img class="image" alt="Woe of Nut-kind" onclick="img.onclick(0)" src="images/photos/pimg1.jpg" >
-	  										<h2 class="custom-caption">Woe of Nut-kind</h2>
-	                  </div>
+			                  <img class="image" alt="Woe of Nut-kind" onclick="img.onclick(0)" src="images/photos/pimg1.jpg" >
+												<h2 class="custom-caption">Woe of Nut-kind</h2>
+			              </div>
 
-	                  <div class="thumbnail">
-	                      <img class="image" alt="New Hampshire" onclick="img.onclick(1)" src="images/photos/pimg2.jpg" >
+			              <div class="thumbnail">
+			                  <img class="image" alt="New Hampshire" onclick="img.onclick(1)" src="images/photos/pimg2.jpg" >
 												<h2 class="custom-caption">New Hampshire</h2>
-	                  </div>
-	              </div>
-	          
-	              <div class="col-md-3">
-	                  <div class="thumbnail">
-	                      <img class="image" alt="New York Twilight" onclick="img.onclick(2)" src="images/photos/pimg3.jpg">
+			              </div>
+			          </div>
+			      
+			          <div class="col-md-3">
+			              <div class="thumbnail">
+			                  <img class="image" alt="New York Twilight" onclick="img.onclick(2)" src="images/photos/pimg3.jpg">
 												<h2 class="custom-caption">New York Twilight</h2>
-	                  </div>
-	              </div>
+			              </div>
+			          </div>
 
-	           		<div class="col-md-3">
-	                  <div class="thumbnail">
-	                      <img class="image" alt="Central Park Amphitheater" onclick="img.onclick(3)" src="images/photos/pimg4.jpg">
+			       		<div class="col-md-3">
+			              <div class="thumbnail">
+			                  <img class="image" alt="Central Park Amphitheater" onclick="img.onclick(3)" src="images/photos/pimg4.jpg">
 												<h2 class="custom-caption">Central Park Amphitheater</h2>
-	                  </div>
-	              </div>
+			              </div>
+			          </div>
 
-         				<div class="col-md-3">
-	                  <div class="thumbnail">
-	                      <img class="image" alt="New Hampshire Crimson Sunset" onclick="img.onclick(4)" src="images/photos/pimg5.jpg">
+		     				<div class="col-md-3">
+			              <div class="thumbnail">
+			                  <img class="image" alt="New Hampshire Crimson Sunset" onclick="img.onclick(4)" src="images/photos/pimg5.jpg">
 												<h2 class="custom-caption">New Hampshire Crimson Sunset</h2>
-	                  </div>
-	              </div>
-	              
-	          </div>
+			              </div>
+			          </div>
+			          
+			      </div>
 					</div> <!-- collapsable end -->
 
-        	<a name="fineart"></a>
+		    	<a name="fineart"></a>
 
 					<div class="collapser">
 						<button type="button" id="plein-air" class="btn btn-default btn-lg btn-block">En Plein Air in Watercolor</button>
 					</div>
 
 					<div id="collapsable5">
-	          <div class="row">
-          
-		          <div class="col-md-3">
-		              <div class="thumbnail">
-		                  <img class="image" alt="Central Park Tree (on cold press paper)" onclick="img.onclick(5)" src="images/fineart/fimg1.jpg" >
+			      <div class="row">
+		      
+				      <div class="col-md-3">
+				          <div class="thumbnail">
+				              <img class="image" alt="Central Park Tree (on cold press paper)" onclick="img.onclick(5)" src="images/fineart/fimg1.jpg" >
 											<h2 class="custom-caption">Central Park Tree</h2>
-		              </div>
-		              <div class="thumbnail">
-		                  <img class="image" alt="Central Park Bridge (on cold press paper)" onclick="img.onclick(6)" src="images/fineart/fimg2.jpg">
+				          </div>
+				          <div class="thumbnail">
+				              <img class="image" alt="Central Park Bridge (on cold press paper)" onclick="img.onclick(6)" src="images/fineart/fimg2.jpg">
 											<h2 class="custom-caption">Central Park Bridge</h2>
-		              </div>           
-		          </div>
+				          </div>           
+				      </div>
 
-		        	<div class="col-md-3">
-		              <div class="thumbnail">
-		                  <img class="image" alt="Central Park Dying Tree (on cold press paper)" onclick="img.onclick(7)" src="images/fineart/fimg3.jpg" >
+				    	<div class="col-md-3">
+				          <div class="thumbnail">
+				              <img class="image" alt="Central Park Dying Tree (on cold press paper)" onclick="img.onclick(7)" src="images/fineart/fimg3.jpg" >
 											<h2 class="custom-caption">Central Park Dying Tree</h2>
-		              </div>
-		              <div class="thumbnail">
-		                  <img class="image" alt="Sun and Shade (on cold press paper)" onclick="img.onclick(8)" src="images/fineart/fimg4.jpg">
+				          </div>
+				          <div class="thumbnail">
+				              <img class="image" alt="Sun and Shade (on cold press paper)" onclick="img.onclick(8)" src="images/fineart/fimg4.jpg">
 											<h2 class="custom-caption">Sun and Shade</h2>
-		              </div>	              
-		       		</div>
-		          
-		          <div class="col-md-3">
+				          </div>	              
+				   		</div>
+				      
+				      <div class="col-md-3">
 								<div class="thumbnail">
 										<img class="image" alt="Rocky Slope (on cold press paper)" onclick="img.onclick(9)" src="images/fineart/fimg5.jpg" >
 										<h2 class="custom-caption">Rocky Slope</h2>
@@ -295,7 +304,7 @@
 										<img class="image" alt="Sunny Day at Central Park (on cold press paper)" onclick="img.onclick(10)" src="images/fineart/fimg6.jpg">
 										<h2 class="custom-caption">Sunny Day at Central Park</h2>
 								</div>             
-			        </div>	
+					    </div>	
 
 							<div class="col-md-3">
 								<div class="thumbnail">
@@ -307,8 +316,8 @@
 										<h2 class="custom-caption">Central Park Sunlight</h2>
 								</div>             
 							</div>	
-	          
-	          </div>
+			      
+			      </div>
 					</div> <!-- collapsable end -->
 
 					<div class="collapser">
@@ -318,41 +327,40 @@
 					<div id="collapsable6">
 						<div class="row">
 
-	            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img class="image" alt="Eggs in Old T-shirt (oil on cotton)" onclick="img.onclick(13)" src="images/fineart/fimg9.jpg" >
+			        <div class="col-md-3">
+		            <div class="thumbnail">
+		                <img class="image" alt="Eggs in Old T-shirt (oil on cotton)" onclick="img.onclick(13)" src="images/fineart/fimg9.jpg" >
 										<h2 class="custom-caption">Eggs in Old T-shirt </h2>
-                </div>
- 		          </div>
+		            </div>
+			        </div>
 
-	            <div class="col-md-3">
-			          <div class="thumbnail">
-                  <img class="image" alt="Eye of David (graphite on bristol)" onclick="img.onclick(14)" src="images/fineart/fimg10.jpg">
+			        <div class="col-md-3">
+					      <div class="thumbnail">
+		              <img class="image" alt="Eye of David (graphite on bristol)" onclick="img.onclick(14)" src="images/fineart/fimg10.jpg">
 									<h2 class="custom-caption">Eye of David</h2>
 								</div>
- 		          </div>
+			        </div>
 
-	            <div class="col-md-3">
-			          <div class="thumbnail">
-                  <img class="image" alt="Old Sony Camera (oil on cotton)" onclick="img.onclick(15)" src="images/fineart/fimg11.jpg">
+			        <div class="col-md-3">
+					      <div class="thumbnail">
+		              <img class="image" alt="Old Sony Camera (oil on cotton)" onclick="img.onclick(15)" src="images/fineart/fimg11.jpg">
 									<h2 class="custom-caption">Old Sony Camera</h2>
 								</div>
- 		          </div>
+			        </div>
 
-	            <div class="col-md-3">
-			          <div class="thumbnail">
-                  <img class="image" alt="Broken Figurine (oil on cotton)" onclick="img.onclick(16)" src="images/fineart/fimg12.jpg">
+			        <div class="col-md-3">
+					      <div class="thumbnail">
+		              <img class="image" alt="Broken Figurine (oil on cotton)" onclick="img.onclick(16)" src="images/fineart/fimg12.jpg">
 									<h2 class="custom-caption">Broken Figurine</h2>
 								</div>
- 		          </div>
+			        </div>
 
 						</div>
-					</div> <!-- collapsable end -->
-	    	</div> <!--close container -->
+					</div> <!--close collapsable6-->
+				</div><!--close container-->
 			</div> <!--close images -->
-    </div> <!--close main-body -->
-
-
+		</div> <!--close tab-content main-body -->
+ 
 		<div class="custom-footer">
 	  	<div class="container" >
 		    <div class="row">
@@ -361,24 +369,24 @@
 						<div class="left-foot">
 							<h4>Personal Links</h4>
 							<p>Email: <a>wei.shi02@myhunter.cuny.edu</a></p>
-							<p>Github: <a href="https://github.com/TheOnlyWei">https://github.com/TheOnlyWei</a></p>
+							<p>Github: <a href="https://github.com/TheOnlyWei" target="_blank">https://github.com/TheOnlyWei</a></p>
+							<p>Resume: <a href="doc/Resume_Wei_Shi.pdf" target="_blank">Resume_Wei_Shi.pdf</a></p>
 						</div>
 					</div>
 
 			  	<div class="col-md-6">
 						<div class="right-foot">
 							<h4>Recommended Tech Websites</h4>
-							<p>Tech Tips: <a href="http://www.howtogeek.com">http://www.howtogeek.com</a></p>
-							<p>Hardware: <a href="http://www.tomshardware.com">http://www.tomshardware.com</a></p>
-							<p>Bootswatch (darkly): <a href="http://bootswatch.com">http://bootswatch.com</a></p>
-							<p>Cool CSS Buttons: <a href="http://www.w3schools.com/css/css3_buttons.asp">http://www.w3schools.com/css/css3_buttons.asp</a></p>
+							<p>Tech Tips: <a href="http://www.howtogeek.com" target="_blank">http://www.howtogeek.com</a></p>
+							<p>Hardware: <a href="http://www.tomshardware.com" target="_blank">http://www.tomshardware.com</a></p>
+							<p>Bootswatch (darkly): <a href="http://bootswatch.com" target="_blank">http://bootswatch.com</a></p>
+							<p>Cool CSS Buttons: <a href="http://www.w3schools.com/css/css3_buttons.asp" target="_blank">http://www.w3schools.com/css/css3_buttons.asp</a></p>
 						</div>
 					</div>
 
 				</div>
 			</div>
 		</div>
-
 
 		<div id="myModal" class="modal">
 			<!-- "&times;" is the html "X" entity useful for a button that closes windows -->

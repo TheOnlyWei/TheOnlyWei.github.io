@@ -17,24 +17,14 @@ a:hover {
 }
 
 */
-a, a:link {
-	color: #EBCEA7;
+a:active, a:focus {
+	color: white;
+	outline: none;
+	text-decoration: none;
 }
 
-a:visited {
-	text-decoration: none;
-	color: #8AB9D1;
-	
-}
-a:active {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: none;
-	color: #C5E2F0;
-}
 /****************************** NAV-BAR ******************************/
-
+/*
 .nav-bar {
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -68,12 +58,59 @@ a:hover {
 	text-decoration: none;
 
 }
+*/
+.nav {
+	background-color: #84A4B3;
 
+}
+.nav-tabs {
+	text-align: center;
+  border-bottom: 0px;
+}
+
+.nav-tabs > li {
+	float: none;
+	display: inline-block;
+
+}
+.nav-tabs > li > a{
+	float: none;
+	display: inline-block;
+	padding: 10px 30px 10px 30px;
+	color: white;
+	font-size: 21px;
+}
+
+.nav-tabs > #art-tab.active > a,
+.nav-tabs > #art-tab.active > a:hover,
+.nav-tabs > #art-tab.active > a:focus {
+  color: white;
+  background-color: black;
+  border-bottom-color: transparent;
+  cursor: default;
+ 	border: 0px;
+	
+
+}
+.nav-tabs > #resume-tab.active > a,
+.nav-tabs > #resume-tab.active > a:hover,
+.nav-tabs > #resume-tab.active > a:focus {
+  color: #84A4B3;
+  background-color: #F0EDE9;
+  border-bottom-color: transparent;
+  cursor: default;
+ 	border: 0px;
+}
+
+#resume-tab > a:hover {
+  color: #84A4B3;
+  background-color: #F0EDE9;
+}
 
 /****************************** JUMBOTRON ******************************/
 .jumbotron{
   background-image:url('images/photos/pimg5.jpg');
-  height: 990px;
+  height: 1050px;
   background-repeat: no-repeat;
   background-size: cover;
 	margin-bottom: 0px;
@@ -82,7 +119,7 @@ a:hover {
 
 
 .jumbotron .container {
-	top: 50px;
+	top: 10px;
   position: relative;
 
 }
@@ -128,10 +165,15 @@ a:hover {
 
 }
 .blog-section h1 {
-	color: #C1D1D9;
+	color: #93B1BF;
 	text-align: center;
-	margin-top: 10px;
-
+	margin-top: 35px;
+}
+.blog-section h3 {
+	color: black;
+	text-align: center;
+	opacity: 0.7;
+	margin-top: 16px;
 }
 /*
 
@@ -168,8 +210,8 @@ a:hover {
   box-shadow: 0 1px 2px rgba(0,0,0,0.07);
 
 	margin: auto;
-	min-height: 425px;
-	max-width: 400px;
+	min-height: 450px;
+	max-width: 450px;
 	border-radius: 15px;
 	position: relative;
   box-shadow: 10px 10px 5px #4f4f4f;
@@ -177,16 +219,16 @@ a:hover {
 }	
 
 
-.blog .blog-entry  {
+.blog .blog-entry p {
 
 	font-family: Georgia, serif;
 	opacity: 0.7;
   background: transparent;
-  padding: 0px 20px 0px 10px;
+  padding: 0px 15px 0px 15px;
 	color: black;
   position: absolute; /* need this otherwise the blog box keeps moving up and down */
   margin: 5px;
-
+	margin-top: 16px;
 
 }
 
@@ -196,8 +238,7 @@ a:hover {
 	opacity: 0.5;
 	color: black;
   position: absolute;
-  bottom: 0;
- 	right: 6px;
+  bottom: 9px;
 	right: 10px;
 }
 
@@ -206,26 +247,28 @@ a:hover {
 	margin: auto;
 }
 .w3-btn-floating, .w3-btn-floating-large{
-	background-color:#9DC0D1;
+	background-color: #84A4B3;
 	margin-left: 10px;
 	margin-right: 10px;
+
 }
 .w3-btn:hover,.w3-btn-block:hover,.w3-btn-floating:hover,.w3-btn-floating-large:hover {
 	color: white;
 	background-color:#60ABD1;
+	text-decoration: none;
 }
+
+
 /****************************** END BLOG SECTION ******************************/
 
 td.left-col {
-	width: 100px;
-
-
+	width: 130px;
+	font-weight: bold;
 }
 
 .main-body {
-	padding-top: 10px;
   background-color: #F0EDE9;
- 
+ 	outline: none;
 }
 
 .main-body p {
@@ -250,7 +293,8 @@ td.left-col {
 	font-size: 30px;
 	border: none;
   white-space: normal !important;
-  word-wrap: break-word; 
+  word-wrap: break-word;
+ 
 }	
 
 #other, #programming, #education {
@@ -263,7 +307,7 @@ td.left-col {
 }
 
 	
-.experience {
+.description {
 	background-color: white;
 	padding: 20px;
 	border-radius: 10px;
@@ -271,6 +315,11 @@ td.left-col {
 
 }
 
+.description, .description > p {
+	font-size: 17px;
+	font-family: Georgia, serif;
+
+}
 .texts {
 	color: black;
 	padding-bottom: 30px;
@@ -280,7 +329,7 @@ td.left-col {
 .texts h4 {
 	text-align: center;
 	padding-bottom: 10px;
-	padding-top: 10px;
+
 }
 .texts ul {
 	margin-bottom:  17px;
@@ -292,17 +341,11 @@ td.left-col {
 
 }
 
-.texts #collapsable1 p {
-	font-size: 17px;
-	font-family: Georgia, serif;
-}
-
 
 
 /****************************** PICTURES ******************************/
 
 .images {
-	padding-top: 20px;
 	background-color: black;
 	padding-bottom: 40px;
 
@@ -341,10 +384,27 @@ td.left-col {
 
 /*TODO: how do you get rid of underline during a:active?*/
 
+.custom-footer a, .custom-footer a:link {
+	color: #EBCEA7;
+}
+
+.custom-footer a:visited {
+	text-decoration: none;
+	color: #8AB9D1;
+	
+}
+.custom-footer a:active {
+	text-decoration: none;
+}
+.custom-footer a:hover {
+	text-decoration: none;
+	color: #C5E2F0;
+}
 
 .custom-footer {
 	text-align: left;
 	margin-bottom: 10px;
+	margin-top: 10px;
 	font-size: 15px;
 	/*background-color: black;*/
 

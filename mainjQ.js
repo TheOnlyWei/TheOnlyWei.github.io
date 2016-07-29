@@ -9,28 +9,29 @@ $(document).ready(function() {
   });
 */
 	$("#education").click(function() {
-		$("#collapsable1").slideToggle("slow");
+		$("#collapsable1").slideToggle("fast");
 	});
 	$("#programming").click(function() {
-		$("#collapsable2").slideToggle("slow");
+		$("#collapsable2").slideToggle("fast");
 	});
 
  	$("#other").click(function() {
-		$("#collapsable3").slideToggle("slow");
+		$("#collapsable3").slideToggle("fast");
 
 	});
 
  	$("#photography").click(function() {
-		$("#collapsable4").slideToggle("slow");
+		$("#collapsable4").slideToggle("fast");
 
 	});
 
  	$("#plein-air").click(function() {
-		$("#collapsable5").slideToggle("slow");
+		$("#collapsable5").slideToggle("fast");
 	});
 
  	$("#still-life").click(function() {
-		$("#collapsable6").slideToggle("slow");
+		$("#collapsable6").slideToggle("fast");
 
 	});
+
 });
