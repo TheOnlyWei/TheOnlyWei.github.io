@@ -1,44 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Case</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</head>
-<body>
+<html>
 
-<div class="container">
-  <h2>Dynamic Tabs</h2>
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-  </ul>
+  <head>   
+		<title>Wei's Web</title> <!-- title is the title of the tab of this web page -->
+    <!--
+		use below to use local bootstrap file:
+		<link rel="stylesheet" href="bt.css">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+		
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style/w3.css">
+		<link rel="stylesheet" href="style/darkly.css">
+    		<link rel="stylesheet" href="main.css">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
-    <div id="menu3" class="tab-pane fade">
-      <h3>Menu 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
-  </div>
-</div>
+    		<link rel="stylesheet" href="style/socialbuttons.css">
+    		
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-</body>
+  </head>
+
+  <body>
+
+   
+
+		<ul class="nav nav-tabs">
+		  <li id="resume-tab" class="active"><a data-toggle="tab" href="#Resume">Resume</a></li>
+		  <li id="art-tab"><a data-toggle="tab" href="#Art">Art</a></li>
+		</ul>
+
+		<div class="tab-content main-body">
+
+			<div id="Resume" class="tab-pane fade in active">
+				<div class="texts container"> <!-- space denotes two classes -->
+  					<p>resume tab</p>
+				</div> <!--close container-->
+    			</div><!--close Resume-->
+
+
+			<div id="Art" class="tab-pane fade images">
+				<div class="container">
+	  					<p>art tab</p>	  		
+				</div><!--close container-->
+			</div> <!--close images -->
+		</div> <!--close tab-content main-body -->
+ 
+	
+    <script type="text/javascript" src="main.js" ></script>
+    <script type="text/javascript" src="mainjQ.js" > </script>
+
+
+  </body>
 </html>
-
