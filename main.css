@@ -66,7 +66,12 @@ a:active, a:focus {
 .nav-tabs {
 	text-align: center;
   border-bottom: 0px;
-
+	-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;  
 }
 
 .nav-tabs > li {
@@ -245,6 +250,7 @@ a:active, a:focus {
 	text-align: center;
 	margin: auto;
 }
+/*
 .w3-btn-floating, .w3-btn-floating-large{
 	background-color: #84A4B3;
 	margin-left: 10px;
@@ -257,6 +263,34 @@ a:active, a:focus {
 	text-decoration: none;
 }
 
+*/
+.page-nav {
+	text-align: center;
+	margin: auto;
+	-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;  
+}
+
+.pagination > li > a {
+	background-color: #84A4B3;
+}
+
+
+.pagination > li > a:hover, .pagination > li > a:active, .pagination > li > a:focus {
+	background-color: #699CB5;
+	cursor: pointer;
+}
+
+.pagination li a.active  {
+	background-color: #F5EEDF;
+	cursor: pointer;
+	color: #699CB5;
+
+}
 
 /****************************** END BLOG SECTION ******************************/
 
@@ -293,12 +327,18 @@ td.left-col {
 	border: none;
   white-space: normal !important;
   word-wrap: break-word;
- 
+
 }	
 
 #other, #programming, #education {
 	color: #F0EDE9;
 	background-color: #A1B9C4;
+	-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none; 
 }	
 
 #other:hover, #programming:hover, #education:hover {
@@ -344,13 +384,13 @@ td.left-col {
 
 /****************************** PICTURES ******************************/
 
-.images {
+#Art {
 	background-color: black;
 	padding-bottom: 40px;
 
 }
 
-.images .container h1{
+#Art .container h1{
 	color: #faf5f0;
 }
 
@@ -361,7 +401,11 @@ td.left-col {
   line-height: 1.42857143;
 	border: 0;
 	background-color : transparent;
+	border-radius: 10px;
+}
 
+.thumbnail > .image {
+	border-radius: 10px;
 }
 
 .thumbnail h2 {
@@ -429,90 +473,90 @@ p > a {
 /****************************** MODAL POP UP ******************************/
 
 /* Style the Image Used to Trigger the Modal */
-.image {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
 
+.gallery{
+	margin: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
 .image:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 3; /* Sit on top */
-    padding-top: 150px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 500px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption { 
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 /* Syntax for Chrome, Safari, and Opera
 	 -webkit- is used for Chrome, Safari, and Opera
 */
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
 }
 
 /* standard syntax is "@keyframes zoom" is the animation for modal pop-up.
 	 scale 0 to scale 1 means to pop-up the image from 0 dimension to its full size. 
 */
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
 }
 
 /* The Close Button */
 .close {
-    position: absolute;
-    top: 30px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 /* use comma to target multiple classes or ids */
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens 
@@ -521,8 +565,8 @@ p > a {
 	
 */
 @media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+  .modal-content {
+      width: 100%;
+  }
 }
 
