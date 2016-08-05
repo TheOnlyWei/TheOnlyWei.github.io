@@ -20,13 +20,13 @@ img.onclick = function(n)
 		// "this" is actually the object "img" because of dot notation in the signature of this function.
 		// object "img" is a nodelist of all items of class "image", accessible using square bracket notation.
 		// "this" refers to the object calling this function, which is a nodelist of "img" html element.
-		modalImg.src = this[n].src; 
-		modalImg.alt = this.alt;
+		modalImg.src = this[n].src; //.src returns src attribute of an image.
+		modalImg.alt = this.alt; //.alt provides text for the image if for some reason it cannot be displayed.
 		// "alt" is text for image if for some reason the viewer cannot get the image to display.
 		captionText.innerHTML = this[n].alt;
 }
 
-// Get the <span> element that closes the modal, which only exists one of at index 0 of nodelist.
+// Get the <span> element that closes the modal, of which there is only one, at index 0 of nodelist.
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal

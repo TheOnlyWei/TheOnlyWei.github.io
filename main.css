@@ -422,11 +422,6 @@ td.left-col {
 	background-color: black;
 }
 
-
-
-
-/*TODO: how do you get rid of underline during a:active?*/
-
 .custom-footer a, .custom-footer a:link {
 	color: #EBCEA7;
 }
@@ -526,6 +521,7 @@ p > a {
 
 /* Syntax for Chrome, Safari, and Opera
 	 -webkit- is used for Chrome, Safari, and Opera
+	 @keyframes moves and transforms elements
 */
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(0)} 
