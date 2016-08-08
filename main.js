@@ -55,6 +55,14 @@ function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
+function currentDiv(n) {
+
+  showDivs(slideIndex = n);
+
+
+}
+
+
 // initially n=1, for slideIndex = 1
 function showDivs(n) { 
   var i; // looping variable
@@ -78,9 +86,21 @@ function showDivs(n) {
      times[i].style.display = "none";
   }
 
+
+	var page = document.getElementsByClassName("page");
+
+  for (i = 0; i < page.length; i++) {
+		//also need a space in front of "active" so that we don't end up creating a series of space each time run this function.
+  	page[i].className = page[i].className.replace(" active", "");//replaces active class wtih nothing.
+
+  }
+
   entries[slideIndex-1].style.display = "block";
   times[slideIndex-1].style.display = "block";
+	page[slideIndex-1].className += " active"; //adds active class. The space before is extremely important for separating classes!
+
 }
+
 
 
 

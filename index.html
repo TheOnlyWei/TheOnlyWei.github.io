@@ -2,7 +2,7 @@
 <html>
 
   <head>   
-		<title>Wei's Web</title> <!-- title is the title of the tab of this web page -->
+		<title>Wei's Website</title> <!-- title is the title of the tab of this web page -->
     <!--
 		use below to use local bootstrap file:
 		<link rel="stylesheet" href="bt.css">
@@ -13,7 +13,6 @@
 		-->
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style/w3.css">
 		<link rel="stylesheet" href="style/darkly.css">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -78,7 +77,7 @@
 						 	<div class="blog">
 								<h1>Blog</h1>
 
-								<div class="blog-entry">
+								<div id="p1" class="blog-entry">
 									<h3>Bought a Kindle</h3>
 									<p>I bought a Kindle Paperwhite that came with ads for $20 off. The ads never bothered me, so it was worth it. There is a built-in dictionary, making reading so much easier.  
 										<p class="blog-entry-date">9:13PM 7/21/2016</p>
@@ -86,7 +85,7 @@
 								</div>
 
 
-								<div class="blog-entry">
+								<div id="p2" class="blog-entry">
 									<h3>Android Dev.</h3>
 									<p>The most difficult aspect of Android programming is the massive library and API. Multi-threaded programs are also required for application responsiveness. The Android OS is also constantly changing, making the learning process more difficult.
 										<p class="blog-entry-date">10:11PM 7/21/2016</p>
@@ -100,11 +99,13 @@
 					</div> <!-- closes column -->
    			</div> <!-- closes row -->
 
-		    <div class="row">
-					<div class="col-md-12 blog-buttons"> 
-						<a class="w3-btn-floating" id="left-arrow"  onclick="plusDivs(-1)"><span id="arrow">&#10094;</span></a>
-						<a class="w3-btn-floating" id="right-arrow" onclick="plusDivs(1)"><span>&#10095;</span></a>
-					</div>
+		    <div class="row page-nav">
+					<ul class="pagination">
+						<li><a id="left-arrow" onclick="plusDivs(-1)">&laquo;</a></li>
+						<li><a class="page active" onclick="currentDiv(1)">1</a></li>
+						<li><a class="page" onclick="currentDiv(2)">2</a></li>
+						<li><a id="right-arrow" onclick="plusDivs(1)">&raquo;</a></li>
+					</ul>
 				</div>
 
 			</div> <!-- closes container -->
@@ -225,8 +226,7 @@
 					</div>
 
 					<div id="collapsable4">
-			  		<div class="row" >
-			      
+			  		<div class="row gallery" >
 			          <div class="col-md-3">
 			              <div class="thumbnail">
 												<!-- try img-responsive -->
@@ -271,7 +271,7 @@
 					</div>
 
 					<div id="collapsable5">
-			      <div class="row">
+			      <div class="row gallery">
 		      
 				      <div class="col-md-3">
 				          <div class="thumbnail">
@@ -325,7 +325,7 @@
 					</div>
 
 					<div id="collapsable6">
-						<div class="row">
+						<div class="row gallery">
 
 			        <div class="col-md-3">
 		            <div class="thumbnail">
@@ -379,7 +379,6 @@
 							<p>Tech Tips: <a href="http://www.howtogeek.com" target="_blank">http://www.howtogeek.com</a></p>
 							<p>Hardware: <a href="http://www.tomshardware.com" target="_blank">http://www.tomshardware.com</a></p>
 							<p>Bootswatch (darkly): <a href="http://bootswatch.com" target="_blank">http://bootswatch.com</a></p>
-							<p>Cool CSS Buttons: <a href="http://www.w3schools.com/css/css3_buttons.asp" target="_blank">http://www.w3schools.com/css/css3_buttons.asp</a></p>
 						</div>
 					</div>
 

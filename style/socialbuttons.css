@@ -27,19 +27,20 @@
 
 .githubBtn{
 	font-size: 30px;
-	background: black;
-	line-height: 1.6em;
+	background: #49338A;
+	line-height: 50px;
+
 
 }
 
 .githubBtn:before{
 	font-family: "FontAwesome";
-	content: "\f09b"; /* add facebook icon */
+	content: "\f113"; /* add facebook icon */
 
 }
 
 .githubBtn:hover{
-  color: black;
+  color: #49338A;
 	background: #fff;
 	text-decoration: none;
 
